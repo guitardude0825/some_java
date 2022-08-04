@@ -10,7 +10,7 @@
         <delete dir="build"/>
     </target>
     <target name="tcomp">
-        <javac srcdir="test" destdir="test"/>
+        <javac includeantruntime="false" srcdir="test" destdir="test"/>
     </target>
 
     <target name="compile">
