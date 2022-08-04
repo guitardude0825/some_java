@@ -15,7 +15,7 @@
 
     <target name="compile">
         <mkdir dir="build/classes"/>
-        <javac srcdir="src" destdir="build/classes"/>
+        <javac includeantruntime="false" srcdir="src" destdir="build/classes"/>
     </target>
     <target name="tjar" depends="tcomp">
         <jar destfile="test/hello.jar" basedir="test/hello">
